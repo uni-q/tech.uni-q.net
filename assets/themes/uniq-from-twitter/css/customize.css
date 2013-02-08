@@ -1,0 +1,32 @@
+
+
+body {
+	background: #cbc0b2;
+}
+.navbar-inner {
+	background: #cbc0b2;
+	box-shadow: none;
+}
+.navbar .brand {
+	display:block;
+	font-size:36px;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 1px 1px;
+	float: left;
+	display: block;
+	padding: 8px 20px 12px;
+	margin-left: -20px;
+	line-height: 1;
+	color: #b2a390;
+}
+.navbar .nav > li > a {
+	float: none;
+	padding: 10px 10px 11px;
+	line-height: 19px;
+	color: #333;
+	text-decoration: none;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
