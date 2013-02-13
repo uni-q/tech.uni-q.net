@@ -1,14 +1,17 @@
 /* Artfully masterminded by ZURB  */
-body,
-html {
+body {
   background: #F5EEDB;
 }
+
+html {
+  background: #EAE1C0;
+}
+
 ul {padding-left: 40px;}
 #copyright {
 	background: #EAE1C0;
 	padding-top: 10px;
 }
-
 pre {
 display: block;
 padding: 8.5px;
