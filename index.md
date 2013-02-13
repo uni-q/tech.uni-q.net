@@ -7,12 +7,19 @@ tagline: 試しに作ってみたよ
 
 ## Post
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
 
+<table class="twelve">
+  <tbody>
+    {% for post in site.posts %}
+    <tr>
+      <td>{{ post.date | date: "%Y-%m-%d" }}</td>
+      <td><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+-----
 
 ## Profile
 
@@ -34,7 +41,7 @@ tagline: 試しに作ってみたよ
         <li><a href="https://github.com/uni-q">github</a>（このサイトのソースコードとかも）</li>
 </ul>
 
-
+-----
 ## about
 
 勉強がてら、「Jekyll Bootstrap」で作ってみた。
