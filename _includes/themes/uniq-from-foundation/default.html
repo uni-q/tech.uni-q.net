@@ -25,10 +25,10 @@
   <script src="{{ ASSET_PATH }}/javascripts/modernizr.foundation.js"></script>
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="{{ HOME_PATH }}/images/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ HOME_PATH }}/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ HOME_PATH }}/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ HOME_PATH }}/images/apple-touch-icon-114x114.png">
 
   </head>
 
@@ -72,25 +72,17 @@
     </div>
     </div>
   </div>
-  <!-- Included JS Files (Uncompressed) -->
-  <!--
+<!-- Included JS Files (Uncompressed) -->
+<!--
   <script src="javascripts/jquery.js"></script><script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script><script src="javascripts/jquery.foundation.forms.js"></script><script src="javascripts/jquery.foundation.reveal.js"></script><script src="javascripts/jquery.foundation.orbit.js"></script><script src="javascripts/jquery.foundation.navigation.js"></script><script src="javascripts/jquery.foundation.buttons.js"></script><script src="javascripts/jquery.foundation.tabs.js"></script><script src="javascripts/jquery.foundation.tooltips.js"></script><script src="javascripts/jquery.foundation.accordion.js"></script><script src="javascripts/jquery.placeholder.js"></script><script src="javascripts/jquery.foundation.alerts.js"></script><script src="javascripts/jquery.foundation.topbar.js"></script><script src="javascripts/jquery.foundation.joyride.js"></script><script src="javascripts/jquery.foundation.clearing.js"></script><script src="javascripts/jquery.foundation.magellan.js"></script>
   -->
   
   <!-- Included JS Files (Compressed) -->
-  <script src="javascripts/jquery.js"></script>
-  <script src="javascripts/foundation.min.js"></script>
+  <script src="{{ ASSET_PATH }}/javascripts/jquery.js"></script>
+  <script src="{{ ASSET_PATH }}/javascripts/foundation.min.js"></script>
   
   <!-- Initialize JS Plugins -->
-  <script src="javascripts/app.js"></script>
-
-  
-    <script>
-    $(window).load(function(){
-      $("#featured").orbit();
-    });
-    </script> 
-
+  <script src="{{ ASSET_PATH }}/javascripts/app.js"></script>
 
 
 
