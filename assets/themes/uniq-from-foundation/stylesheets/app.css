@@ -1,8 +1,11 @@
 /* Artfully masterminded by ZURB  */
-
+body,
+html {
+  background: #F5EEDB;
+}
 ul {padding-left: 40px;}
 #copyright {
-	background: #ededed;
+	background: #EAE1C0;
 	padding-top: 10px;
 }
 
@@ -25,6 +28,22 @@ word-wrap: break-word;
 }
 pre .highlight {
 	background: inherit;
+}
+
+.top-bar {
+  margin-bottom: 0;
+  background: #483A3A;
+}
+header {
+  background: #DE564B;
+  margin-bottom: 20px;
+}
+
+header h2 {
+  color: #F5EEDB;
+}
+header h5 {
+  color: #EAE1C0;
 }
 /* -------------------------------------------------- 
    Table of Contents

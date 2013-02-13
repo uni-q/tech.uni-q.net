@@ -1,9 +1,19 @@
 {% if page.title %}
-<h2>
+<header>
+  <div class="row">
+    <div class="twelve columns">
+      <h2>
   {{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}
-</h2>
+      </h2>
+    </div>
+  </div>
+</header>
 {% endif %}
 
-<div class="twelve columns">
+<div class="row">
+  <div class="twelve columns">
+    <section role="main">
 {{ content }}
+    </section>
+  </div>
 </div>
