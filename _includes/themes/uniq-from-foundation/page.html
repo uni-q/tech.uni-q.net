@@ -1,0 +1,9 @@
+{% if page.title %}
+<h2>
+  {{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}
+</h2>
+{% endif %}
+
+<div class="twelve columns">
+{{ content }}
+</div>

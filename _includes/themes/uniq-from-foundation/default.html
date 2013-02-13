@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>{{ site.title }} {% if page.title %} | {{ page.title }} {% endif %}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+<!--     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all"> -->
+  <!--   <link href='http://fonts.googleapis.com/css?family=Bad+Script|Julius+Sans+One' rel='stylesheet' type='text/css'> -->
+
+  <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/app.css">
+  <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/syntax.css" type="text/css" media="all">
+
+  <script src="{{ ASSET_PATH }}/javascripts/modernizr.foundation.js"></script>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+  </head>
+
+  <body>
+  <header>
+    <nav class="top-bar">
+      <ul>
+        <!-- Title Area -->
+        <li class="name">
+          <h1><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1>
+        </li>
+      </ul>
+
+      <section>
+        <!-- Right Nav Section -->
+        <ul class="right" class="nav-bar">
+            {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            {% include JB/pages_list %}
+          <li class="divider show-for-medium-and-up"></li>
+<!--             <li class="active"><a href="#">Nav Item 1</a></li> -->
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+
+
+  <div class="row">
+    <section role="main">
+      {{ content }}
+    </section>
+  </div>
+
+  <div id="copyright">
+    <div class="row">
+    <div class="four columns"><p>&copy; {{ site.author.name }} 2013</p></div>
+    <div class="eight columns">
+      <ul class="inline-list right">
+        <li>
+        <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Blog Framework : Jekyll Bootstrap</a></li>
+        <li>
+        <a href="http://foundation.zurb.com/" target="_blank">CSS Framework : foundation</a></li>
+    </ul>
+    </div>
+    </div>
+  </div>
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  <script src="javascripts/jquery.js"></script><script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script><script src="javascripts/jquery.foundation.forms.js"></script><script src="javascripts/jquery.foundation.reveal.js"></script><script src="javascripts/jquery.foundation.orbit.js"></script><script src="javascripts/jquery.foundation.navigation.js"></script><script src="javascripts/jquery.foundation.buttons.js"></script><script src="javascripts/jquery.foundation.tabs.js"></script><script src="javascripts/jquery.foundation.tooltips.js"></script><script src="javascripts/jquery.foundation.accordion.js"></script><script src="javascripts/jquery.placeholder.js"></script><script src="javascripts/jquery.foundation.alerts.js"></script><script src="javascripts/jquery.foundation.topbar.js"></script><script src="javascripts/jquery.foundation.joyride.js"></script><script src="javascripts/jquery.foundation.clearing.js"></script><script src="javascripts/jquery.foundation.magellan.js"></script>
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+
+  
+    <script>
+    $(window).load(function(){
+      $("#featured").orbit();
+    });
+    </script> 
+
+
+
+
+  {% include JB/analytics %}
+
+
+
+  </body>
+</html>
