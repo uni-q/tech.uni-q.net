@@ -2,7 +2,7 @@
   <div class="row">
     <div class="twelve columns">
       <h2>{{ page.title }} </h2>
-      <h5>{{ page.date | date_to_long_string }}</h5>
+      <h5>{{ page.date | date: "%Y-%m-%d" }}</h5>
     </div>
   </div>
 </header>
