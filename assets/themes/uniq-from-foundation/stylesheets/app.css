@@ -1,8 +1,12 @@
 /* Artfully masterminded by ZURB  */
 body {
   background: #F5EEDB;
+  font-family:'メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック',sans-serif;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family:'メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック',sans-serif;
 
+}
 html {
   background: #EAE1C0;
 }
@@ -45,9 +49,11 @@ header {
 header h2 {
   color: #F5EEDB;
   font-size: 24px;
+  font-weight: normal;
 }
 header h5 {
   color: #EAE1C0;
+  font-weight: normal;
 }
 /* -------------------------------------------------- 
    Table of Contents

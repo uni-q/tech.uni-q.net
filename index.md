@@ -8,7 +8,8 @@ tagline: 試しに作ってみたよ
 
 ## about
 
-勉強がてら「Jekyll Bootstrap」で作ってみた。色々修正中。
+勉強がてら「Jekyll Bootstrap」で作ってみた。色々修正中。  
+修正履歴は<a href="https://github.com/uni-q">github</a>に。
 
 [http://uniq.heteml.jp/blog/](http://uniq.heteml.jp/blog/)から
 引っ越してみました。
