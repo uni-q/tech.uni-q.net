@@ -35,26 +35,36 @@
   </head>
 
   <body>
-    <nav class="top-bar">
-      <ul>
-        <!-- Title Area -->
+
+
+    <nav class="top-bar" style="">
+      <ul class="title-area">
         <li class="name">
           <h1><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1>
         </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
 
-      <section>
+    <section class="top-bar-section">
         <!-- Right Nav Section -->
-        <ul class="right" class="nav-bar">
+        <ul class="right">
+          <li class="divider"></li>
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
-          <li class="divider show-for-medium-and-up"></li>
-<!--             <li class="active"><a href="#">Nav Item 1</a></li> -->
+<!--
+           <li class="divider"></li>
+          <li><a href="/archive.html">Archive</a></li>
+          <li class="divider"></li>
+          <li><a href="/categories.html">Categories</a></li>
+          <li class="divider"></li>
+          <li><a href="/pages.html">Pages</a></li>
+          <li class="divider"></li>
+          <li><a href="/tags.html">Tags</a></li> -->
         </ul>
-      </section>
+    </section>
     </nav>
-
 
 
 

@@ -5,8 +5,14 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family:'メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック',sans-serif;
-
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
+h2 { color: #de544a;}
+h3 { color: #807449;}
+h4 { color: #aa9d71;}
+h5 { color: #c1b795;}
+
 html {
   background: #EAE1C0;
 }
@@ -37,10 +43,7 @@ pre .highlight {
 	background: inherit;
 }
 
-.top-bar {
-  margin-bottom: 0;
-  background: #483A3A;
-}
+
 header {
   background: #DE564B;
   margin-bottom: 20px;
@@ -55,15 +58,24 @@ header h5 {
   color: #EAE1C0;
   font-weight: normal;
 }
+pre code {
+  background: none;
+}
 /* -------------------------------------------------- 
-   Table of Contents
+   nav
 -----------------------------------------------------
 :: Shared Styles
 :: Page Name 1
 :: Page Name 2
 */
-
-
+.top-bar {
+  margin-bottom: 0;
+  background: #483A3A;
+}
+.top-bar-section ul.right,
+.top-bar ul.title-area {
+  padding-left: 0 !important;
+}
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
