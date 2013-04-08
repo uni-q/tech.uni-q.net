@@ -8,11 +8,17 @@ tagline: 試しに作ってみたよ
 
 ## about
 
-勉強がてら「Jekyll Bootstrap」で作ってみた。色々修正中。  
-修正履歴は<a href="https://github.com/uni-q">github</a>に。
-
-[http://uniq.heteml.jp/blog/](http://uniq.heteml.jp/blog/)から
-引っ越してみました。
+うに（uniq）です。こんにちわ。  
+このページは、勉強がてら「Jekyll Bootstrap」で作ってみました。  
+webデザインとか、html/css、UIなどについて書いてこうと思ってます。  
+前のブログは、[http://uniq.heteml.jp/blog/](http://uniq.heteml.jp/blog/)。
+<ul>
+<li>なまえ：uniq（うに）</li>
+<li>メール：info［at］uni-q.net</li>
+<li><a href="http://uni-q.net">uni-q.net</a>（自己紹介とか）</li>
+<li><a href="http://www.slideshare.net/yumi-uniq-ishizaki">slideshare</a>（社内LTだらけなの）</li>
+<li><a href="https://github.com/uni-q">github</a>（このサイトのソースコードとかも）</li>
+</ul>
 
 -----
 
@@ -30,18 +36,6 @@ tagline: 試しに作ってみたよ
   </tbody>
 </table>
 
------
-
-## Profile
-
-【なまえ】Yumi Ishizaki  
-【メール】info［at］uni-q.net  
-
-<ul>
-<li><a href="http://uni-q.net">uni-q.net</a>（自己紹介とか）</li>
-<li><a href="http://www.slideshare.net/yumi-uniq-ishizaki">slideshare</a>（社内LTだらけなの）</li>
-<li><a href="https://github.com/uni-q">github</a>（このサイトのソースコードとかも）</li>
-</ul>
 
 
 
