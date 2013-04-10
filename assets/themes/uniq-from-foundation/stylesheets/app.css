@@ -1,27 +1,26 @@
 /* Artfully masterminded by ZURB  */
 body {
-  background: #F5EEDB;
+  background: #fff;
+  color: #333;
   font-family:'メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック',sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family:'メイリオ',Meiryo,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック',sans-serif;
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin-top: 1em;
+  margin-bottom: .4em;
+  line-height: 1.4;
 }
-h2 { color: #de544a;}
+/*h2 { color: #de544a;}
 h3 { color: #807449;}
 h4 { color: #aa9d71;}
-h5 { color: #c1b795;}
+h5 { color: #c1b795;}*/
 
 html {
-  background: #EAE1C0;
+  background: #2f2f2f;
 }
 
 ul {padding-left: 40px;}
-#copyright {
-	background: #EAE1C0;
-	padding-top: 10px;
-}
+
 pre {
 display: block;
 padding: 8.5px;
@@ -42,52 +41,145 @@ word-wrap: break-word;
 pre .highlight {
 	background: inherit;
 }
-
-
-header {
-  background: #DE564B;
-  margin-bottom: 20px;
-}
-
-header h2 {
-  color: #F5EEDB;
-  font-size: 24px;
-  font-weight: normal;
-}
-header h5 {
-  color: #EAE1C0;
-  font-weight: normal;
-}
 pre code {
   background: none;
 }
+
 /* -------------------------------------------------- 
-   nav
------------------------------------------------------
-:: Shared Styles
-:: Page Name 1
-:: Page Name 2
-*/
+   footer
+-----------------------------------------------------*/
+.colophon {
+  background: #2f2f2f;
+  color: #ccc;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+.colophon h2 {
+  color: #ccc;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.colophon hr {
+  border-color: #666;
+}
+.colophon .copyright {
+  text-align: right;
+  font-style: italic;
+}
+/* -------------------------------------------------- 
+   header
+-----------------------------------------------------*/
 .top-bar {
   margin-bottom: 0;
-  background: #483A3A;
+  background: #cb6b9d;
 }
 .top-bar-section ul.right,
 .top-bar ul.title-area {
   padding-left: 0 !important;
 }
+.top-bar-section ul.right {
+  text-transform: uppercase;
+}
+.top-bar-section ul.right span {
+  display: none;
+}
+/* -------------------------------------------------- 
+   header-2
+-----------------------------------------------------*/
+header.header-post {
+  background: #d4d4d4;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+header.header-page {
+  background: #cb6b9d;
+  color: #000;
+}
+header.header-page a {
+  color: #fff;
+}
+
+header h2 {
+  color: #000;
+  font-size: 1.4em;
+  font-weight: normal;
+}
+header .header-date {
+  color: #6d6d6d;
+  font-weight: normal;
+}
+
+/* -------------------------------------------------- 
+   main
+-----------------------------------------------------*/
+.main-post,
+.main-page {
+
+}
+
+.main-post p,
+.main-page p {
+  margin-left: 1em;
+}
+.main-post a,
+.main-page a {
+  color: #000;
+  text-decoration: underline;
+}
+.main-post a:hover,
+.main-page a:hover {
+  background: #f9dceb;
+  text-decoration: none;
+}
+
+.main-post h2,
+.main-page h2 {
+  color: #ca6c9c;
+  font-size: 1.6em;
+}
+
+.main-post h3,
+.main-page h3 {
+  background: #749498;
+  color: #fff;
+  border-left: 10px solid #b1ccce;
+  font-size: 1.4em;
+  padding: .4em 12px .4em 6px;
+
+  font-weight: normal;
+}
+.main-post h4,
+.main-page h4 {
+  color: #749498;
+  border-bottom: 1px solid #b0d8de;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+.main-post h5,
+.main-page h5 {
+  color: #9a7744;
+  font-size: .8em;
+}
+.main-page .tag_box {
+  margin-top: 1em;
+}
+/* -------------------------------------------------- 
+   header
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
 
-
-
 /* -----------------------------------------
    Page Name 1
 ----------------------------------------- */
-
-
-
 
 /* -----------------------------------------
    Page Name 2

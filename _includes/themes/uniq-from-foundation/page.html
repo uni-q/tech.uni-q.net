@@ -1,10 +1,14 @@
-{% if page.title %}
-<header>
+
+{% if page.title or page.tagline %}
+<header class="header-page">
   <div class="row">
     <div class="twelve columns">
-      <h2>
-  {{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}
-      </h2>
+  {% if page.title %}
+      <h2>{{ page.title }}</h2>
+  {% endif %}
+  {% if page.tagline %}
+      <p>{{ page.tagline }}</p>
+  {% endif %}
     </div>
   </div>
 </header>
@@ -12,7 +16,7 @@
 
 <div class="row">
   <div class="twelve columns">
-    <section role="main">
+    <section role="main" class="main-page">
 {{ content }}
     </section>
   </div>

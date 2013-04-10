@@ -1,8 +1,9 @@
-<header>
+
+<header class="header-post">
   <div class="row">
     <div class="twelve columns">
       <h2>{{ page.title }} </h2>
-      <h5>{{ page.date | date: "%Y-%m-%d" }}</h5>
+      <span class="header-date">{{ page.date | date: "%Y-%m-%d" }}</span>
     </div>
   </div>
 </header>
@@ -10,7 +11,7 @@
 
 <div class="row">
   <div class="twelve columns">
-    <section role="main">
+    <section role="main" class="main-post">
 {{ content }}
     </section>
   </div>

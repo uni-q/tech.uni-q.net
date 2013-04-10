@@ -49,8 +49,8 @@
     <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
-          <li class="divider"></li>
-
+          <li><a href="{{ HOME_PATH }}">home</a></li>
+          <li><a href="#colophon">colophon</a></li>
 <!--
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
@@ -77,17 +77,24 @@
 {{ content }}
 
 
-  <div id="copyright">
+  <div id="colophon" class="colophon">
     <div class="row">
-    <div class="four columns"><p>&copy; {{ site.author.name }} 2013</p></div>
-    <div class="eight columns">
-      <ul class="inline-list right">
-        <li>
-        <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Blog Framework : Jekyll Bootstrap</a></li>
-        <li>
-        <a href="http://foundation.zurb.com/" target="_blank">CSS Framework : foundation</a></li>
-    </ul>
-    </div>
+      <div class="twelve columns">
+        <h2>colophon</h2>
+        <ul class="">
+          <li>
+          <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Blog Framework : Jekyll Bootstrap</a></li>
+          <li>
+          <a href="http://foundation.zurb.com/" target="_blank">CSS Framework : foundation</a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li>email: info [at] uni-q.net</li>
+          <li>profile: <a href="http://uni-q.net">http://uni-q.net</a></li>
+        </ul>
+        <hr>
+        <p class="copyright">&copy; {{ site.author.name }} 2013</p>
+      </div>
     </div>
   </div>
 <!-- Included JS Files (Uncompressed) -->
