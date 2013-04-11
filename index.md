@@ -6,24 +6,28 @@ tagline: こんにちわ。<a href="http://uni-q.net">うに（uniq）</a>です
 {% include JB/setup %}
 
 ### POST
-<table class="twelve">
-  <tbody>
-    {% for post in site.posts array limit:20 %}
+<ul class="post-list">
     <!-- array limit:20 で最新20件
     https://github.com/Shopify/liquid/wiki/Liquid-for-Designers -->
-    <tr>
-      <td>{{ post.date | date: "%Y-%m-%d" }}</td>
-      <td><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-<!-- {{ post.category }} -->
-      </td>
-    </tr>
+    {% for post in site.posts array limit:20 %}
+  <li>
+    <a href="{{ BASE_PATH }}{{ post.url }}">
+      <span class="post-list-category label {{ post.category }}">{{ post.category }}</span>
+      <span class="post-list-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <div class="post-list-title">{{ post.title }}</div>
+      <div class="post-list-tag">
+        <ul class="inline-list">
+          {% assign tags_list = post.tags %}  
+          {% include custom/tags_list %}
+        </ul>
+      </div>
+    </a>
+  </li>
     {% endfor %}
-    <tr>
-      <td colspan="2"><a href="/archive.html">もっと読む</a></td>
-    </tr>
-  </tbody>
-</table>
-
+</ul>
+<div class="right">
+  <a href="/archive.html" class="button">もっと読む</a>
+</div>
 
 
 
